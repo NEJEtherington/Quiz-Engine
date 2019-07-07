@@ -1,0 +1,33 @@
+{
+  "name": "quiz-engine",
+  "version": "1.0.0",
+  "description": "repo for an online quiz engine",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha index.spec.js",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NEJEtherington/Quiz-Engine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NEJEtherington/Quiz-Engine/issues"
+  },
+  "homepage": "https://github.com/NEJEtherington/Quiz-Engine#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.4.2",
+    "mocha": "^6.1.4",
+    "pg": "^7.11.0",
+    "pg-promise": "^8.7.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "easygraphql-tester": "^5.1.6",
+    "nodemon": "^1.19.1"
+  }
+}
