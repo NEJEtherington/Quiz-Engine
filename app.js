@@ -1,11 +1,13 @@
 const express = require("express");
 const expressGraphQl = require("express-graphql");
 const app = express();
+const { RootMutationType } = require("./rootMutation");
 const { RootQueryType } = require("./rootQuery");
 const { GraphQLSchema } = require("graphql");
 
 const schema = new GraphQLSchema({
-  query: RootQueryType
+  query: RootQueryType,
+  mutation: RootMutationType
 });
 
 app.use(
