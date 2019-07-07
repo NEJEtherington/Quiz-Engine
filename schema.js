@@ -22,7 +22,7 @@ const QuizType = new GraphQLObjectType({
   description: "This represents a quiz",
   fields: () => ({
     quiz_id: { type: GraphQLInt },
-    quiz_title: { type: GraphQLNonNull(GraphQLString) },
+    quiz_title: { type: GraphQLString },
     published: { type: GraphQLBoolean },
     times_quiz_taken: { type: GraphQLInt },
     bracket_1: { type: GraphQLInt },
